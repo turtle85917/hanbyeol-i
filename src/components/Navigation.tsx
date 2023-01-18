@@ -9,8 +9,8 @@ export default class Navigation extends React.Component {
   render(): React.ReactNode {
     return (
       <Container>
-        <Profile src="/uploads/h1.png" />
-        <LeftTitle>HOME</LeftTitle>
+        <Profile src="/hanbyeols/h1.png" />
+        <LeftTitle>( ͡° ͜ʖ ͡°)</LeftTitle>
       </Container>
     )
   }

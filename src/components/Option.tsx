@@ -1,28 +1,33 @@
 import React from "react";
 import styled from "styled-components";
 
-export default class Option extends React.Component {
-  constructor(props: {}) {
+interface P {
+  title: string;
+  description: string;
+}
+
+export default class Option extends React.Component<P> {
+  constructor(props: P) {
     super(props);
   }
 
   render(): React.ReactNode {
     return (
       <Container>
-        <h1>ASDF</h1>
-        <p>그냥 눌러보는 거시와요</p>
+        <h1>{this.props.title}</h1>
+        <p>{this.props.description}</p>
       </Container>
     )
   }
 }
 
 const Container = styled.div`
-  width: 35em;
-  height: 5em;
+  width: 40em;
+  height: 4.5em;
   padding-left: 5em;
   background-color: white;
   margin-bottom: 1em;
-  transition: 500ms;
+  transition: 300ms;
   cursor: pointer;
 
   &:hover {
