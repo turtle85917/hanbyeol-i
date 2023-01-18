@@ -13,4 +13,4 @@ ReactDOM.createRoot(document.getElementById("app") as HTMLElement).render(
       <Route path="/" element={<Home />} />
     </Routes>
   </BrowserRouter>
-)
+);
